@@ -1,0 +1,88 @@
+{
+  "url": "https://wagetheft.law",
+  "name": "WageTheft.law",
+  "wordmark": ["WAGE", "THEFT", ".LAW"],
+  "alt_names": [
+    "Wage Theft Law",
+    "WageTheft.law by SueMyBoss.Law"
+  ],
+  "firm": "Centurion Trial Attorneys, APC",
+  "firm_url": "https://suemyboss.law/",
+  "firm_brand": "SueMyBoss.Law",
+  "firm_id": "https://suemyboss.law/#organization",
+  "trade_name_line": "WageTheft.law is operated by Centurion Trial Attorneys, APC, which also operates SueMyBoss.Law.",
+  "description": "California wage theft lawyers. Unpaid overtime, missed meal and rest breaks, off-the-clock work, late final paychecks, misclassification and PAGA claims, for one worker or a whole crew. Free case review.",
+  "intake_url": "https://attorneyryan.lawbrokr.com/sue-my-boss",
+  "intake_label": "Free case review",
+  "phone_display": "1-888-CALL-RYAN",
+  "phone_e164": "+18882255792",
+  "suemyboss_url": "https://suemyboss.law/",
+  "book_url": "https://suemyboss.law/get-it-in-writing-book/",
+  "ryan_links": [
+    "https://suemyboss.law/",
+    "https://ryanstygar.com/",
+    "https://attorneyryan.substack.com/"
+  ],
+  "knows_about": [
+    "Wage theft",
+    "Unpaid overtime",
+    "Meal and rest breaks",
+    "Off-the-clock work",
+    "Final paycheck and waiting time penalties",
+    "Independent contractor misclassification",
+    "Private Attorneys General Act (PAGA)",
+    "Wage and hour class actions",
+    "California employment law"
+  ],
+  "other_sites": [
+    ["SueMyBoss.Law", "https://suemyboss.law/"],
+    ["Severance.law", "https://severance.law/"],
+    ["HarassmentLawyers.com", "https://harassmentlawyers.com/"],
+    ["PregnancyRights.Law", "https://pregnancyrights.law/"]
+  ],
+  "offices": [
+    {
+      "label": "San Diego",
+      "street": "8880 Rio San Diego Dr., Suite 800",
+      "city": "San Diego",
+      "zip": "92108"
+    },
+    {
+      "label": "Orange County",
+      "street": "1400 Newport Center Dr., Suite 100",
+      "city": "Newport Beach",
+      "zip": "92660"
+    }
+  ],
+  "nav": [
+    {
+      "slug": "articles",
+      "label": "Know your rights"
+    },
+    {
+      "slug": "class-actions",
+      "label": "Class actions"
+    },
+    {
+      "slug": "how-it-works",
+      "label": "How it works"
+    },
+    {
+      "slug": "faq",
+      "label": "FAQ"
+    },
+    {
+      "slug": "about",
+      "label": "About"
+    }
+  ],
+  "claims": [
+    {"tag": "Overtime", "title": "Unpaid overtime", "text": "In California, most hourly workers earn overtime after 8 hours in a day or 40 in a week, not just after 40.", "slug": "unpaid-overtime-california"},
+    {"tag": "Breaks", "title": "Missed meal and rest breaks", "text": "Each workday your employer denies a required break can owe you an extra hour of pay.", "slug": "meal-and-rest-breaks-california"},
+    {"tag": "Off the clock", "title": "Working off the clock", "text": "Security checks, pre-shift meetings, answering texts after hours: time you work is time you're owed.", "slug": "off-the-clock-work-california"},
+    {"tag": "Final pay", "title": "A late final paycheck", "text": "Fired? Your final pay is due right away. When it's late, penalties can add up to 30 days of wages.", "slug": "final-paycheck-waiting-time-penalties"},
+    {"tag": "Misclassified", "title": "Called a contractor, treated like an employee", "text": "California's ABC test presumes you're an employee. Misclassified workers can be owed overtime, breaks and expenses.", "slug": "misclassified-independent-contractor-california"},
+    {"tag": "PAGA", "title": "PAGA, explained", "text": "California's Private Attorneys General Act lets a worker recover penalties for Labor Code violations that hit coworkers too.", "slug": "paga-explained"}
+  ],
+  "ga_id": ""
+}

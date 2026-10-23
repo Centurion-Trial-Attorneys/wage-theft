@@ -1,0 +1,18 @@
+# Netlify publishes the prebuilt ./public folder. No build step runs on Netlify;
+# run `python3 build.py` locally (or in the scheduled update task) and commit the result.
+[build]
+  publish = "public"
+  command = ""
+
+[[redirects]]
+  from = "https://www.wagetheft.law/*"
+  to = "https://wagetheft.law/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
