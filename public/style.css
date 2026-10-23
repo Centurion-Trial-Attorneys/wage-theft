@@ -301,3 +301,16 @@ p { margin: 0 0 1em; max-width: 68ch; }
 /* Bottom-of-page results disclaimer */
 .results-disclaimer{padding:20px 0 28px}
 .results-disclaimer .fine{margin:0 auto;text-align:center;max-width:72ch}
+
+/* Book band (every page, above the footer) */
+.book-band { background: var(--fog); border-top: 4px solid var(--ink); padding: 44px 0; }
+.book-band .wrap { display: grid; grid-template-columns: 150px 1fr; gap: 36px; align-items: center; max-width: 900px; }
+.book-band .book-cover { display: block; border: 3px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); transform: rotate(-3deg); background: var(--paper); }
+.book-band .book-cover img { display: block; width: 100%; height: auto; }
+.book-band .kicker { font-size: 1.1rem; margin-bottom: 12px; }
+.book-band h2 { margin: 0 0 10px; }
+.book-band p { margin: 0 0 18px; }
+@media (max-width: 600px) {
+  .book-band .wrap { grid-template-columns: 96px 1fr; gap: 20px; align-items: start; }
+  .book-band h2 { font-size: 1.6rem; }
+}

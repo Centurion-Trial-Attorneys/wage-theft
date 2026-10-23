@@ -217,6 +217,17 @@ def footer_html():
     )
     year = dt.date.today().year
     return f"""
+<aside class="book-band" aria-labelledby="book-band-title">
+  <div class="wrap">
+    <a class="book-cover" href="{s['book_url']}" tabindex="-1" aria-hidden="true"><picture><source srcset="/get-it-in-writing.webp" type="image/webp"><img src="/get-it-in-writing.jpg" width="320" height="479" alt="" loading="lazy"></picture></a>
+    <div>
+      <p class="kicker">The book</p>
+      <h2 id="book-band-title">Know your rights before you need them</h2>
+      <p>Attorney Ryan's book, <em>Get It in Writing: The Ultimate Guide to Your Rights at Work</em> (Penguin), covers pay, breaks, bullying bosses, leave and more, in plain English.</p>
+      <a class="btn btn-ghost" href="{s['book_url']}">Get the book</a>
+    </div>
+  </div>
+</aside>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
