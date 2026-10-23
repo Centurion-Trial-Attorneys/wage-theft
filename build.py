@@ -264,9 +264,23 @@ def footer_html():
 <div class="mobile-cta">{intake_button()}</div>"""
 
 
+
+def book_schema():
+    return {
+        "@type": "Book",
+        "@id": "https://suemyboss.law/get-it-in-writing-book/#book",
+        "name": "Get It in Writing: The Ultimate Guide to Your Rights at Work",
+        "author": {"@type": "Person", "@id": f"{BASE}/about/#ryan", "name": "Ryan Stygar", "alternateName": "Attorney Ryan", "sameAs": SITE["ryan_links"]},
+        "publisher": {"@type": "Organization", "name": "Penguin Random House"},
+        "url": SITE["book_url"],
+        "image": f"{BASE}/get-it-in-writing.jpg",
+        "inLanguage": "en",
+    }
+
+
 def render(*, slug, title, description, body, schema=None, og_type="website", current=None):
     url = page_url(slug)
-    graph = [org_schema()]
+    graph = [org_schema(), book_schema()]
     if schema:
         graph.extend(schema)
     ld = json.dumps({"@context": "https://schema.org", "@graph": graph}, indent=1)
