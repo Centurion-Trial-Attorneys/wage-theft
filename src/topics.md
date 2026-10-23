@@ -7,7 +7,7 @@ Launch guides (the homepage "Is this happening to you?" cards link to these slug
 - [x] Unpaid overtime in California: when it starts and how it's calculated (slug: unpaid-overtime-california)
 - [ ] Meal and rest breaks in California: what you're owed when you miss one (slug: meal-and-rest-breaks-california)
 - [ ] Working off the clock in California: security checks, pre-shift meetings and after-hours texts (slug: off-the-clock-work-california)
-- [ ] When is my final paycheck due in California? Waiting time penalties explained (slug: final-paycheck-waiting-time-penalties)
+- [x] When is my final paycheck due in California? Waiting time penalties explained (slug: final-paycheck-waiting-time-penalties)
 - [ ] Am I misclassified as an independent contractor? California's ABC test (slug: misclassified-independent-contractor-california)
 - [ ] PAGA explained: how one worker can recover penalties for the whole crew (slug: paga-explained)
 
