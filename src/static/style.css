@@ -280,3 +280,20 @@ p { margin: 0 0 1em; max-width: 68ch; }
 .a11y-contrast .btn, .a11y-contrast .btn * { background-color: #ffeb3b !important; color: #000 !important; border-color: #ffeb3b !important; text-decoration: none !important; }
 .a11y-contrast .a11y-opt[aria-pressed="true"]::after, .a11y-contrast .a11y-size button { background: #ffeb3b !important; color: #000 !important; }
 .a11y-contrast .portrait img, .a11y-contrast .hero-art .frame { box-shadow: none !important; }
+
+/* Case results: POW bursts */
+.results { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px 18px; }
+.pow { position: relative; isolation: isolate; aspect-ratio: 1 / 0.92; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 19% 19% 19%; }
+.pow-shape { position: absolute; inset: 0; z-index: -1; filter: drop-shadow(6px 7px 0 var(--ink)); }
+.pow-shape::before, .pow-shape::after { content: ""; position: absolute; clip-path: polygon(50.0% 2.0%, 57.8% 10.8%, 69.1% 3.8%, 72.2% 16.7%, 83.9% 16.1%, 83.3% 27.8%, 93.0% 32.2%, 89.2% 42.2%, 100.0% 50.0%, 89.2% 57.8%, 96.2% 69.1%, 83.3% 72.2%, 82.9% 82.9%, 72.2% 83.3%, 69.1% 96.2%, 57.8% 89.2%, 50.0% 98.0%, 42.2% 89.2%, 32.2% 93.0%, 27.8% 83.3%, 14.6% 85.4%, 16.7% 72.2%, 7.0% 67.8%, 10.8% 57.8%, 0.0% 50.0%, 10.8% 42.2%, 3.8% 30.9%, 16.7% 27.8%, 14.6% 14.6%, 27.8% 16.7%, 31.6% 5.7%, 42.2% 10.8%); }
+.pow-shape::before { inset: 0; background: var(--ink); }
+.pow-shape::after { inset: 9px; background: var(--yellow); }
+.results li:nth-child(3n+2) .pow-shape::after { background: var(--gold); }
+.results li:nth-child(3n+3) .pow-shape::after { background: #fff3c4; }
+.pow .amount { font-family: var(--display); font-size: clamp(2.2rem, 3vw, 2.7rem); line-height: 1; letter-spacing: 0.03em; color: var(--ink); margin: 0 0 6px; }
+.pow h3 { font-size: 1rem; line-height: 1.25; margin: 0 0 4px; }
+.pow p { font-size: 0.86rem; line-height: 1.35; margin: 0; color: var(--ink); }
+.results-fine { margin-top: 28px; }
+.a11y-contrast .pow-shape { filter: none; }
+.a11y-contrast .pow-shape::after { background: #000 !important; }
+.a11y-readable .pow .amount { font-family: Verdana, Tahoma, Arial, sans-serif; font-weight: 700; }

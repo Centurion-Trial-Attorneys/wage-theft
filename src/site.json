@@ -1,7 +1,11 @@
 {
   "url": "https://wagetheft.law",
   "name": "WageTheft.law",
-  "wordmark": ["WAGE", "THEFT", ".LAW"],
+  "wordmark": [
+    "WAGE",
+    "THEFT",
+    ".LAW"
+  ],
   "alt_names": [
     "Wage Theft Law",
     "WageTheft.law by SueMyBoss.Law"
@@ -35,10 +39,22 @@
     "California employment law"
   ],
   "other_sites": [
-    ["SueMyBoss.Law", "https://suemyboss.law/"],
-    ["Severance.law", "https://severance.law/"],
-    ["HarassmentLawyers.com", "https://harassmentlawyers.com/"],
-    ["PregnancyRights.Law", "https://pregnancyrights.law/"]
+    [
+      "SueMyBoss.Law",
+      "https://suemyboss.law/"
+    ],
+    [
+      "Severance.law",
+      "https://severance.law/"
+    ],
+    [
+      "HarassmentLawyers.com",
+      "https://harassmentlawyers.com/"
+    ],
+    [
+      "PregnancyRights.Law",
+      "https://pregnancyrights.law/"
+    ]
   ],
   "offices": [
     {
@@ -64,6 +80,10 @@
       "label": "Class actions"
     },
     {
+      "slug": "results",
+      "label": "Results"
+    },
+    {
       "slug": "how-it-works",
       "label": "How it works"
     },
@@ -77,12 +97,92 @@
     }
   ],
   "claims": [
-    {"tag": "Overtime", "title": "Unpaid overtime", "text": "In California, most hourly workers earn overtime after 8 hours in a day or 40 in a week, not just after 40.", "slug": "unpaid-overtime-california"},
-    {"tag": "Breaks", "title": "Missed meal and rest breaks", "text": "Each workday your employer denies a required break can owe you an extra hour of pay.", "slug": "meal-and-rest-breaks-california"},
-    {"tag": "Off the clock", "title": "Working off the clock", "text": "Security checks, pre-shift meetings, answering texts after hours: time you work is time you're owed.", "slug": "off-the-clock-work-california"},
-    {"tag": "Final pay", "title": "A late final paycheck", "text": "Fired? Your final pay is due right away. When it's late, penalties can add up to 30 days of wages.", "slug": "final-paycheck-waiting-time-penalties"},
-    {"tag": "Misclassified", "title": "Called a contractor, treated like an employee", "text": "California's ABC test presumes you're an employee. Misclassified workers can be owed overtime, breaks and expenses.", "slug": "misclassified-independent-contractor-california"},
-    {"tag": "PAGA", "title": "PAGA, explained", "text": "California's Private Attorneys General Act lets a worker recover penalties for Labor Code violations that hit coworkers too.", "slug": "paga-explained"}
+    {
+      "tag": "Overtime",
+      "title": "Unpaid overtime",
+      "text": "In California, most hourly workers earn overtime after 8 hours in a day or 40 in a week, not just after 40.",
+      "slug": "unpaid-overtime-california"
+    },
+    {
+      "tag": "Breaks",
+      "title": "Missed meal and rest breaks",
+      "text": "Each workday your employer denies a required break can owe you an extra hour of pay.",
+      "slug": "meal-and-rest-breaks-california"
+    },
+    {
+      "tag": "Off the clock",
+      "title": "Working off the clock",
+      "text": "Security checks, pre-shift meetings, answering texts after hours: time you work is time you're owed.",
+      "slug": "off-the-clock-work-california"
+    },
+    {
+      "tag": "Final pay",
+      "title": "A late final paycheck",
+      "text": "Fired? Your final pay is due right away. When it's late, penalties can add up to 30 days of wages.",
+      "slug": "final-paycheck-waiting-time-penalties"
+    },
+    {
+      "tag": "Misclassified",
+      "title": "Called a contractor, treated like an employee",
+      "text": "California's ABC test presumes you're an employee. Misclassified workers can be owed overtime, breaks and expenses.",
+      "slug": "misclassified-independent-contractor-california"
+    },
+    {
+      "tag": "PAGA",
+      "title": "PAGA, explained",
+      "text": "California's Private Attorneys General Act lets a worker recover penalties for Labor Code violations that hit coworkers too.",
+      "slug": "paga-explained"
+    }
   ],
-  "ga_id": ""
+  "ga_id": "",
+  "results": [
+    {
+      "amount": "$3,000,000",
+      "title": "Failure to Provide Breaks, Unpaid Overtime",
+      "text": "Class action settlement for employees forced to work without proper breaks, missing pay and other violations.",
+      "group": "wage"
+    },
+    {
+      "amount": "$2,110,000",
+      "title": "Wage Theft",
+      "text": "Failure to pay overtime and failure to provide meal and rest breaks.",
+      "group": "wage"
+    },
+    {
+      "amount": "$1,950,000",
+      "title": "Unpaid Wages",
+      "text": "Unpaid overtime and missed breaks.",
+      "group": "wage"
+    },
+    {
+      "amount": "$1,900,000",
+      "title": "Unpaid Wages, Unpaid Overtime",
+      "text": "Class action settlement for healthcare workers wrongfully denied proper pay.",
+      "group": "wage"
+    },
+    {
+      "amount": "$1,100,000",
+      "title": "Class Action",
+      "text": "Meal and rest breaks and unpaid overtime.",
+      "group": "wage"
+    },
+    {
+      "amount": "$775,000",
+      "title": "Unpaid Wages",
+      "text": "Improper wage statements and late payroll.",
+      "group": "wage"
+    },
+    {
+      "amount": "$2,862,889",
+      "title": "Vehicle vs. Bicycle",
+      "text": "Judgment secured for our client.",
+      "group": "other"
+    },
+    {
+      "amount": "$2,300,000",
+      "title": "Pregnancy Discrimination",
+      "text": "FMLA retaliation and wrongful termination.",
+      "group": "other"
+    }
+  ]
 }

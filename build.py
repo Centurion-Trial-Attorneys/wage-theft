@@ -163,6 +163,21 @@ def intake_button(label=None, cls="btn"):
     return f'<a class="{cls}" href="{SITE["intake_url"]}">{label or SITE["intake_label"]}</a>'
 
 
+RESULTS_FINE = ('<p class="fine results-fine">Prior results do not guarantee a similar outcome. Every case depends on its own facts. '
+                'Class action amounts are total settlements for all workers in the case, not what any one worker received.</p>')
+
+
+def results_html(items):
+    out = ['<ul class="results">']
+    for r in items:
+        out.append(
+            f'<li class="pow"><span class="pow-shape" aria-hidden="true"></span>'
+            f'<p class="amount">{ESC(r["amount"])}</p><h3>{ESC(r["title"])}</h3><p>{ESC(r["text"])}</p></li>'
+        )
+    out.append("</ul>")
+    return "\n".join(out)
+
+
 def wordmark_html():
     a, b, c = SITE["wordmark"]
     return f'{a}<span class="wm-mid">{b}</span>{c}'
@@ -307,6 +322,10 @@ def fill_tokens(text, articles):
         "{{INTAKE_BUTTON_LIGHT}}": intake_button(cls="btn btn-light"),
         "{{INTAKE_BUTTON_GHOST}}": intake_button(cls="btn btn-ghost"),
         "{{CLAIM_CARDS}}": claim_cards_html(articles),
+        "{{RESULTS_WAGE}}": results_html([r for r in s.get("results", []) if r["group"] == "wage"]),
+        "{{RESULTS_OTHER}}": results_html([r for r in s.get("results", []) if r["group"] != "wage"]),
+        "{{RESULTS_TOP}}": results_html([r for r in s.get("results", []) if r["group"] == "wage"][:3]),
+        "{{RESULTS_FINE}}": RESULTS_FINE,
         "{{PHONE_DISPLAY}}": s["phone_display"],
         "{{PHONE_E164}}": s["phone_e164"],
         "{{FAQ_HOME}}": faq_html([q for q in FAQ if q.get("home")]),
