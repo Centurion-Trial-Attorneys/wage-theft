@@ -9,7 +9,7 @@ Launch guides (the homepage "Is this happening to you?" cards link to these slug
 - [x] Working off the clock in California: security checks, pre-shift meetings and after-hours texts (slug: off-the-clock-work-california)
 - [x] When is my final paycheck due in California? Waiting time penalties explained (slug: final-paycheck-waiting-time-penalties)
 - [x] Am I misclassified as an independent contractor? California's ABC test (slug: misclassified-independent-contractor-california)
-- [ ] PAGA explained: how one worker can recover penalties for the whole crew (slug: paga-explained)
+- [x] PAGA explained: how one worker can recover penalties for the whole crew (slug: paga-explained)
 
 Next:
 
