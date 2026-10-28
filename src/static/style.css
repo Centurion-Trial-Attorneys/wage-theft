@@ -94,7 +94,7 @@ p { margin: 0 0 1em; max-width: 68ch; }
 .hero .actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 26px; }
 .hero .phone { font-size: 1rem; font-weight: 600; margin-top: 20px; }
 .hero .phone a { color: var(--ink); font-weight: 800; }
-.hero-art { position: relative; max-width: 430px; margin: 0 auto 30px; }
+.hero-art { position: relative; max-width: 470px; margin: 0 auto 30px; }
 .hero-art .frame { border: 4px solid var(--ink); box-shadow: 10px 10px 0 var(--ink); background: var(--paper); padding: 10px; transform: rotate(2deg); }
 .hero-art img { display: block; width: 100%; height: auto; }
 .hero-art .badge {
@@ -108,7 +108,28 @@ p { margin: 0 0 1em; max-width: 68ch; }
   .hero { padding: 40px 0 70px; }
   .hero .wrap { grid-template-columns: 1fr; gap: 40px; }
 }
-@media (max-width: 480px) { .hero-art .badge { left: -6px; right: 6px; } .hero-art .badge .roles { font-size: 1rem; white-space: normal; } }
+/* Pop-out comic panel: Ryan breaks out of the top of a blue speed-line panel */
+.hero-art .pop { position: relative; transform: rotate(2deg); margin-top: 20px; }
+.hero-art .pop .panel { position: absolute; left: 0; right: 0; bottom: 0; top: 34%; border: 4px solid var(--ink); box-shadow: 10px 10px 0 var(--ink);
+  background: radial-gradient(circle, rgba(10,40,130,.55) 2.2px, transparent 2.6px) 0 0 / 14px 14px,
+              repeating-conic-gradient(from 0deg at 50% 70%, #1c55d6 0 7deg, #2f6ef0 7deg 14deg); }
+.hero-art .pop picture, .hero-art .pop img { position: relative; z-index: 1; }
+.hero-art .bubble { position: absolute; z-index: 2; top: 2%; right: -18px; max-width: 170px; margin: 0; background: #fff; color: var(--ink);
+  border: 4px solid var(--ink); box-shadow: 5px 5px 0 var(--ink); padding: 10px 14px; font-family: var(--display); font-size: 1.45rem;
+  line-height: 1.05; text-align: center; text-transform: uppercase; transform: rotate(5deg); }
+.hero-art .bubble::after { content: ""; position: absolute; left: 18px; bottom: -22px; border: 12px solid transparent; border-top: 16px solid var(--ink); }
+.hero-art .badge { z-index: 3; }
+@media (max-width: 900px) {
+  .hero .wrap { gap: 28px; }
+  .hero-art { order: -1; max-width: 360px; width: 100%; margin: 0 auto 22px; }
+  .hero-art .pop { margin-top: 0; transform: rotate(1.5deg); }
+  .hero-art .pop .panel { top: 30%; }
+  .hero-art .bubble { font-size: 1.1rem; max-width: 130px; top: 0; right: -6px; padding: 8px 10px; }
+  .hero-art .badge { bottom: -26px; padding: 6px 14px 8px; }
+  .hero-art .badge .name { font-size: 1.7rem; }
+  .hero-art .badge .roles { display: none; }
+}
+@media (max-width: 480px) { .hero-art .badge { left: -6px; right: auto; } .hero-art .badge .roles { font-size: 1rem; white-space: normal; } }
 
 /* Sections */
 .section { padding: 76px 0; }
@@ -255,7 +276,7 @@ p { margin: 0 0 1em; max-width: 68ch; }
 
 /* Readable font: plain sans headings */
 .a11y-readable h1, .a11y-readable h2, .a11y-readable .display, .a11y-readable .btn, .a11y-readable .tag, .a11y-readable .kicker,
-.a11y-readable .wordmark, .a11y-readable .hero-art .badge, .a11y-readable .steps li::before {
+.a11y-readable .wordmark, .a11y-readable .hero-art .badge, .a11y-readable .hero-art .bubble, .a11y-readable .steps li::before {
   font-family: Verdana, Tahoma, Arial, sans-serif; font-weight: 700; letter-spacing: 0.01em; line-height: 1.2;
 }
 .a11y-readable body { font-family: Verdana, Tahoma, Arial, sans-serif; }
@@ -279,7 +300,7 @@ p { margin: 0 0 1em; max-width: 68ch; }
 .a11y-contrast a, .a11y-contrast a * { color: #ffeb3b !important; text-decoration: underline !important; }
 .a11y-contrast .btn, .a11y-contrast .btn * { background-color: #ffeb3b !important; color: #000 !important; border-color: #ffeb3b !important; text-decoration: none !important; }
 .a11y-contrast .a11y-opt[aria-pressed="true"]::after, .a11y-contrast .a11y-size button { background: #ffeb3b !important; color: #000 !important; }
-.a11y-contrast .portrait img, .a11y-contrast .hero-art .frame { box-shadow: none !important; }
+.a11y-contrast .portrait img, .a11y-contrast .hero-art .frame, .a11y-contrast .hero-art .pop .panel, .a11y-contrast .hero-art .bubble { box-shadow: none !important; }
 
 /* Case results: POW bursts */
 .results { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px 18px; }
