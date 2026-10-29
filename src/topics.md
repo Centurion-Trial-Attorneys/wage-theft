@@ -13,7 +13,7 @@ Launch guides (the homepage "Is this happening to you?" cards link to these slug
 
 Next:
 
-- [ ] Time rounding and auto-deducted meal breaks: is my employer shaving hours?
+- [x] Time rounding and auto-deducted meal breaks: is my employer shaving hours?
 - [ ] Regular rate of pay: why bonuses and shift differentials change your overtime rate
 - [ ] Unpaid commissions and bonuses after you leave a job
 - [ ] Illegal paycheck deductions in California
