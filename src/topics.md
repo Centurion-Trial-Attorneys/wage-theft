@@ -16,7 +16,7 @@ Next:
 - [x] Time rounding and auto-deducted meal breaks: is my employer shaving hours?
 - [x] Regular rate of pay: why bonuses and shift differentials change your overtime rate
 - [x] Unpaid commissions and bonuses after you leave a job
-- [ ] Illegal paycheck deductions in California
+- [x] Illegal paycheck deductions in California
 - [ ] Reimbursement for phone, mileage and work expenses (Labor Code section 2802)
 - [ ] Salaried but not exempt: who really qualifies for no overtime
 - [ ] Split shift and reporting time pay
