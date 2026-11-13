@@ -142,6 +142,12 @@
   "results": [
     {
       "amount": "$3,000,000",
+      "title": "Missed Breaks, Overtime, Wage Statements",
+      "text": "Class action recovery for workers denied proper breaks and overtime pay and given improper wage statements.",
+      "group": "wage"
+    },
+    {
+      "amount": "$3,000,000",
       "title": "Failure to Provide Breaks, Unpaid Overtime",
       "text": "Class action settlement for employees forced to work without proper breaks, missing pay and other violations.",
       "group": "wage"
