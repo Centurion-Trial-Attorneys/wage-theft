@@ -183,6 +183,12 @@
       "group": "wage"
     },
     {
+      "amount": "$185,000",
+      "title": "Employee Misclassification",
+      "text": "Recovery for misclassification and failure to pay proper wages.",
+      "group": "wage"
+    },
+    {
       "amount": "$2,862,889",
       "title": "Vehicle vs. Bicycle",
       "text": "Judgment secured for our client.",
