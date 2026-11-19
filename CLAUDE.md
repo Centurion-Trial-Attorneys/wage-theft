@@ -4,7 +4,7 @@ This site is a top-of-funnel intake site for California wage and hour clients of
 
 ## Rules
 
-- Never publish without Ryan's approval. New drafts go to Ryan's Command Center (https://claude.ai/artifact/Sf2QQGWZXyWDQkdeVF3RX7) as `pending` items with site `wagetheft-law`. When he approves one there, the Command Center publisher task writes it to `src/articles/`, builds, and pushes to main.
+- Weekly articles publish automatically (Ryan's rule, Nov. 18, 2026). The weekly task creates the item in Ryan's Command Center (https://claude.ai/artifact/Sf2QQGWZXyWDQkdeVF3RX7) with site `wagetheft-law`, then releases it itself: after the 15-minute spacing check in its task instructions, it marks the item `approved` (approvedBy `auto`) and starts the Command Center publisher task, which writes it to `src/articles/`, builds, and pushes to main. Ryan reviews articles after they are live. Anything else (hand-made items, edits, companions) still waits for Ryan's approval. Never publish any other way.
 - This is attorney advertising under the California Rules of Professional Conduct (rules 7.1-7.5). No guarantees, no unverifiable superlatives ("best," "top-rated"), no case results without the "prior results" disclaimer, no fee claims beyond what `src/faq.json` already says.
 - Verify every statute, regulation, and case citation against a primary source before using it. If leginfo is blocked, follow the Style Guide backup rule: compare Justia and FindLaw, quote only when they match, and flag anything amended this year. If it can't be verified, leave it out. Ryan checks every cite.
 - Fees (only state them the way `src/faq.json` does, approved by Ryan Oct 22, 2026): case evaluations are free; if we take the case, our fee comes out of what we recover from the employer, including costs; if there's no recovery, the client pays nothing; fees and costs are explained in a written agreement before we start. Buttons say "Free case review."
@@ -32,5 +32,5 @@ Direct second person, plain English, short punchy sentences without stacking one
 
 ## Publishing steps
 
-1. Weekly task: write the article, confirm `python3 build.py` builds, and create the `pending` item in the Command Center. Don't commit.
-2. Publisher task (runs when Ryan clicks Approve, plus a daily backup): write the approved item to `src/articles/<slug>.md` exactly as Ryan left it, check off its topic in `src/topics.md`, build, commit `src/` and `public/`, and push to main.
+1. Weekly task: write the article, confirm `python3 build.py` builds, and create the item in the Command Center, then release it under the 15-minute spacing rule (approve it and start the publisher). Don't commit.
+2. Publisher task (started by the weekly task or when Ryan clicks Approve, plus a daily backup): write the approved item to `src/articles/<slug>.md` exactly as it was approved, check off its topic in `src/topics.md`, build, commit `src/` and `public/`, and push to main.
