@@ -17,7 +17,7 @@ Next:
 - [x] Regular rate of pay: why bonuses and shift differentials change your overtime rate
 - [x] Unpaid commissions and bonuses after you leave a job
 - [x] Illegal paycheck deductions in California
-- [ ] Reimbursement for phone, mileage and work expenses (Labor Code section 2802)
+- [x] Reimbursement for phone, mileage and work expenses (Labor Code section 2802)
 - [ ] Salaried but not exempt: who really qualifies for no overtime
 - [ ] Split shift and reporting time pay
 - [ ] Itemized wage statements: what your pay stub must show
