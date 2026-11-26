@@ -18,7 +18,7 @@ Next:
 - [x] Unpaid commissions and bonuses after you leave a job
 - [x] Illegal paycheck deductions in California
 - [x] Reimbursement for phone, mileage and work expenses (Labor Code section 2802)
-- [ ] Salaried but not exempt: who really qualifies for no overtime
+- [x] Salaried but not exempt: who really qualifies for no overtime
 - [ ] Split shift and reporting time pay
 - [ ] Itemized wage statements: what your pay stub must show
 - [ ] Filing a wage claim with the Labor Commissioner vs. a lawsuit
